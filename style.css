@@ -1,10 +1,10 @@
 .exhibit {
-  width: 39%;
-  height: 39%;
+  width: 40%;
+  height: 40%;
   background-color: rgba(0, 0, 0, 0.2);
   margin: 3%;
   padding: 4px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 #seperator {
@@ -34,7 +34,7 @@
   height: auto;
   padding: 4px;
   margin: 6px;
-  
+
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.1);
 
@@ -42,7 +42,7 @@
   border-style: solid;
   border-width: 4px;
   border-color: rgba(0, 0, 0, 0);
-  
+
   transition: 0.2s ease-in-out;
 }
 
@@ -50,7 +50,7 @@
   margin-top: 0px;
   margin-left: -5px;
   font-size: 24px;
-  }
+}
 
 .folder:hover {
   border-color: rgba(0, 0, 0, 1);
@@ -59,7 +59,7 @@
 }
 
 .folder:focus {
-    border-width: 7px;
+  border-width: 7px;
   background-color: rgba(255, 255, 255, 1);
   transform: scale(1.1) rotate(10deg) skewY(10deg);
 }
@@ -85,7 +85,8 @@
 
 .marquee {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%);
-  mask-image: linear-gradient(to right, transparent 90%, black 10%); /* life is pain. i hate mysel */
+  mask-image: linear-gradient(to right, transparent 90%, black 10%);
+  /* life is pain. i hate mysel */
 }
 
 #splash {
