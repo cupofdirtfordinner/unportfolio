@@ -71,7 +71,9 @@ function folderE() {
   console.log("reach:" + reach);
 }
 
-const interval = setInterval(function() {forever(); }, 10);
+const interval = setInterval(function() {
+  forever();
+}, 10);
 
 
 function forever() {
