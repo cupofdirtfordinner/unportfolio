@@ -1,6 +1,7 @@
 //make background a sparkly gradient that moves with your mouse cursor
 //maybe paralax something idk
 //that seems like a lot of work but damn it'd be cool
+//this is all fucking nightmare code. I want to be euthanised
 const splash = document.getElementById("splash");
 window.onload = wackadoodle();
 
@@ -24,7 +25,8 @@ function folderA() {
   } else {
     ThreeD = 0;
   }
-  console.log("ThreeD:" + ThreeD)
+  console.log("ThreeD:" + ThreeD);
+  update();
 }
 
 var pixel = 0;
@@ -36,6 +38,7 @@ function folderB() {
     pixel = 0;
   }
   console.log("pixel:" + pixel);
+  update();
 }
 
 var etc = 0;
@@ -47,6 +50,7 @@ function folderC() {
     etc = 0;
   }
   console.log("etc:" + etc);
+  update();
 }
 
 var code = 0;
@@ -58,6 +62,7 @@ function folderD() {
     code = 0;
   }
   console.log("code:" + code);
+  update();
 }
 
 var reach = 0;
@@ -69,38 +74,61 @@ function folderE() {
     reach = 0;
   }
   console.log("reach:" + reach);
+  update();
 }
 
-const interval = setInterval(function() {
+//const interval = setInterval(function() {forever();}, 10);
+function update() {
   forever();
-}, 10);
+}
 
+const threeyd = Array.from(document.getElementsByClassName("threed"));
+const pixelyd = Array.from(document.getElementsByClassName("pixel"));
+const etcyd = Array.from(document.getElementsByClassName("etc"));
+const codyd = Array.from(document.getElementsByClassName("code"));
+const reaychd = Array.from(document.getElementsByClassName("reach"));
+
+document.body.addEventListener('click', forever(), true);
 
 function forever() {
-  if (ThreeD === 1) {
-    document.getElementById("threed").style.display = "inline-block";
-  } else {
-    document.getElementById("threed").style.display = "none";
-  }
-  if (pixel === 1) {
-    document.getElementById("pixeld").style.display = "inline-block";
-  } else {
-    document.getElementById("pixeld").style.display = "none";
-  }
-  if (etc === 1) {
-    document.getElementById("etcd").style.display = "inline-block";
-  } else {
-    document.getElementById("etcd").style.display = "none";
-  }
-  if (code === 1) {
-    document.getElementById("coded").style.display = "inline-block";
-  } else {
-    document.getElementById("coded").style.display = "none";
-  }
-  if (reach === 1) {
-    document.getElementById("reachd").style.display = "inline-block";
-  } else {
-    document.getElementById("reachd").style.display = "none";
-  }
+    
+    threeyd.forEach(penis => {
+      if (ThreeD === 1) {
+        penis.style.display = "inline-block";
+        penis.scrollIntoView();
+      } else {
+        penis.style.display = "none";
+    }})
 
+    pixelyd.forEach(penis => {
+      if (pixel === 1) {
+        penis.style.display = "inline-block";
+        penis.scrollIntoView();
+      } else {
+        penis.style.display = "none";
+    }})
+
+    etcyd.forEach(penis => {
+      if (etc === 1) {
+        penis.style.display = "inline-block";
+        penis.scrollIntoView();
+      } else {
+        penis.style.display = "none";
+    }})
+
+    codyd.forEach(penis => {
+      if (code === 1) {
+        penis.style.display = "inline-block";
+        penis.scrollIntoView();
+      } else {
+        penis.style.display = "none";
+    }})
+
+    reaychd.forEach(penis => {
+      if (reach === 1) {
+        penis.style.display = "inline-block";
+        penis.scrollIntoView();
+      } else {
+        penis.style.display = "none";
+    }})
 }
